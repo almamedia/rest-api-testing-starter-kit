@@ -1,0 +1,28 @@
+{
+  "name": "supertest-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "[ ${CI} ] && mocha --reporter=xunit || mocha"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^1.9.1",
+    "lodash": "^2.4.1",
+    "mocha": "^1.21.4",
+    "require-directory": "^2.0.0",
+    "supertest": "^0.13.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.8.2",
+    "chalk": "^0.5.1",
+    "express": "^4.9.0",
+    "nodemon": "^1.2.1"
+  }
+}
