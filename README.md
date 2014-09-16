@@ -1,5 +1,5 @@
-API testing starter kit
-=======================
+Supertest starter kit
+=====================
 
 
 [SuperTest](https://github.com/visionmedia/supertest) API tests with [Mocha](http://visionmedia.github.io/mocha/). This is a starter-kit which you can copy to your own projects.
