@@ -1,13 +1,14 @@
 API testing starter kit
 =======================
 
-- Requires [NodeJS](http://nodejs.org/) `v0.10` or newer
 
-MochaJS API tests. This is a starter-kit which you can copy to your own projects.
+[SuperTest](https://github.com/visionmedia/supertest) API tests with [Mocha](http://visionmedia.github.io/mocha/). This is a starter-kit which you can copy to your own projects.
 
 
 Installation
 ------------
+
+- Requires [NodeJS](http://nodejs.org/) `v0.10` or newer
 
 Install [Nodemon](http://nodemon.io/) and [Mocha](http://visionmedia.github.io/mocha/) globally:
 ```sh
