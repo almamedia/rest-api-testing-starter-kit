@@ -1,4 +1,4 @@
-Supertest starter kit
+SuperTest starter kit
 =====================
 
 
