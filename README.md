@@ -1,11 +1,15 @@
 API testing starter kit
 =======================
 
+- Requires [NodeJS](http://nodejs.org/) `v0.10` or newer
+
+MochaJS API tests. This is a starter-kit which you can copy to your own projects.
+
 
 Installation
 ------------
 
-Install Nodemon and Mocha globally:
+Install [Nodemon](http://nodemon.io/) and [Mocha](http://visionmedia.github.io/mocha/) globally:
 ```sh
 npm install -g nodemon mocha
 ```
@@ -38,3 +42,27 @@ Set an environment variable `export CI=true` (note: e.g. Travis-CI [sets this au
 CI=true npm test
 ```
 This outputs the test results as "standard-ish" [XUnit XML](http://en.wikipedia.org/wiki/XUnit).
+
+
+Writing tests
+-------------
+
+Test suites must be stored in `./test/suites/`-folder. If you wish, you can also organize your test suites into folders (maximun 2 levels deep).
+
+A test suite must exposed as CommonJS module function which takes the supertest's request object (in this case called `API`) as an argument. Suite must have at least one MochaJS `describe`-block inside them.
+
+Here's an example structure:
+
+```js
+module.exports = function(client) {
+
+  describe('Describe your test suite here', function() {
+    it('should do something', function(done) {
+      /* some tests */
+    });
+  });
+
+}
+```
+
+See the provided examples [`root endpoint test`](test/suites/0-root.js) and [`collection test`](test/suites/collection/collection.js) for more examples.
