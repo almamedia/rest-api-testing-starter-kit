@@ -55,7 +55,7 @@ A test suite must exposed as CommonJS module function which takes the supertest'
 Here's an example structure:
 
 ```js
-module.exports = function(client) {
+module.exports = function(API) {
 
   describe('Describe your test suite here', function() {
     it('should do something', function(done) {
