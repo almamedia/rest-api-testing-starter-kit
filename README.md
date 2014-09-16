@@ -23,7 +23,7 @@ npm install
 Running the server and testing it
 ---------------------------------
 
-Run the server:
+Run the example server:
 
 ```sh
 npm start
